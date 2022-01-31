@@ -1,0 +1,72 @@
+body {
+    margin: 2em auto;
+    background-color: grey;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    width: 406px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+img {
+    width: 400px;
+}
+
+#headerP {
+    background-color: honeydew;
+    margin: 0px;
+    padding: 5px;
+    text-align: left;
+    font-weight: 700;
+}
+
+#commentText {
+    text-align: left;
+    color: rgb(60, 60, 60);
+    /* background-color: honeydew; */
+    margin: 0px;
+    padding: 5px;
+
+}
+
+.left {
+    text-align: left;
+}
+
+.roundBorder {
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: 0.8em;
+    width: 5em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 1em;
+    border-radius: 10px;
+    width: auto;
+}
+
+#scores {
+    font-size: 2em;
+    font-weight: 800;
+    margin: 2px;
+    padding: 0.2em;
+}
+
+input {
+    display: inline-block;
+}
+
+.bold {
+    font-weight: 900;
+    font-size: 1.5em;
+}
