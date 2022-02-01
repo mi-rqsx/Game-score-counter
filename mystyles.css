@@ -18,3 +18,27 @@ body {
     width: 25px;
 }
 
+
+/* 
+#scoDisplayContainer {
+    height: 50px;
+}
+*/
+
+
+#scoDisplay {
+    font-size: 3rem;
+} 
+
+#forButtons {
+    text-align: center;
+}
+#buttonTest {
+    position: relative;
+
+
+}
+
+
+
+
