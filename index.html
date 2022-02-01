@@ -6,13 +6,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Score Counter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="mystyles.css">
 </head>
 
 <body>
 
 
-    <div>
+
+
+    <div class="container mt-5">
+        <div class="row">
+
+
+
+            <div class="col-3">
+                r
+            </div>
+
+
+
+            <div class="col-6">
+                <div class="my-3 position-relative">
+                    <input id="inpNameOfGame" class="position-relative top-0 start-50 translate-middle-x" type="text"
+                        placeholder="Name of game">
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <input id="inpCompet1" type="text" placeholder="Competitor 1">
+                    </div>
+                    <div class="col-6">
+                        <input id="inpCompet2" type="text" placeholder="Competitor 2">
+                    </div>
+                </div>
+
+                <label for="numRounds">Number of rounds</label>
+                <select name="numRounds" id="numRounds">
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <label for="maxSco">Max scores per round</label>
+                <input type="number" name="maxSco" id="maxSco" step="1" min="1">
+
+
+                <div class="row">
+
+                    <div class="col-4 wonRounds">
+                        <input class="chbxRounds" type="checkbox" name="chbx1-1" id="chbx1-1">
+                        <input class="chbxRounds" type="checkbox" name="chbx1-1" id="chbx1-2">
+                        <input class="chbxRounds" type="checkbox" name="chbx1-1" id="chbx1-3">
+                        <input class="chbxRounds" type="checkbox" name="chbx1-1" id="chbx1-4">
+                        <input class="chbxRounds" type="checkbox" name="chbx1-1" id="chbx1-5">
+                    </div>
+
+                    <div class="col-4 text-center ">
+                        <span id="displSco1">0</span>
+                        <span id="displSco">:</span>
+                        <span id="displSco2">0</span>
+                    </div>
+
+
+                    <div class="col-4 wonRounds">
+                        <input class="chbxRounds" type="checkbox" name="chbx2-1" id="chbx2-1">
+                        <input class="chbxRounds" type="checkbox" name="chbx2-1" id="chbx2-2">
+                        <input class="chbxRounds" type="checkbox" name="chbx2-1" id="chbx2-3">
+                        <input class="chbxRounds" type="checkbox" name="chbx2-1" id="chbx2-4">
+                        <input class="chbxRounds" type="checkbox" name="chbx2-1" id="chbx2-5">
+                    </div>
+
+                    <div class="col-4"></div>
+                    <div class="col-4">R</div>
+                    <div class="col-4"></div>
+
+                </div>
+
+            </div>
+
+            <div class="col-3">
+                r
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div>
         <img src="https://media.istockphoto.com/photos/various-sport-equipments-on-grass-picture-id949190736?b=1&k=20&m=949190736&s=170667a&w=0&h=f3ofVqhbmg2XSVOa3dqmvGtHc4VLA_rtbboRGaC8eNo="
             alt="Ping pong picture">
         <p id="headerP">Ping Pong score keeper</p>
@@ -50,7 +164,7 @@
         </nav>
 
 
-    </div>
+    </div> -->
 
     <script src='myApp.js'></script>
 </body>
