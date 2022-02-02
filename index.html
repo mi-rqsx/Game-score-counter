@@ -19,11 +19,57 @@
     <div class="container mt-5">
         <div class="row">
 
+            <div id="avaSet1" class="col-3 text-center">
+
+                <button class="btn-ava" id="ava1-1">
+                    <img class="imgAva"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+                        alt="picture">
+                </button>
+
+                <button class="btn-ava" id="ava1-2">
+                    <img class="imgAva"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"
+                        alt="picture">
+                </button>
+
+                <button class="btn-ava" id="ava1-3">
+                    <img class="imgAva"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
+                        alt="picture">
+                </button>
+
+                <button class="btn-ava" id="ava1-4">
+                    <img class="imgAva"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+                        alt="picture">
+                </button>
+
+                <button class="btn-ava" id="ava1-5">
+                    <img class="imgAva"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"
+                        alt="picture">
+                </button>
+
+                <button class="btn-ava" id="ava1-6">
+                    <img class="imgAva"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"
+                        alt="picture">
+                </button>
+
+                <div class="row mt-3">
+                    <div id="selectedAva1" class="selectedAva text-center col-12">
+                        <img id="selecImg1" class="selImgAva"
+                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png"
+                            alt="avatar picture">
+                    </div>
+                </div>
 
 
-            <div class="col-3">
-                r
             </div>
+
+
+
 
 
 
@@ -50,17 +96,12 @@
                 </select>
 
                 <label for="maxSco">Max scores per round</label>
-                <input type="number" name="maxSco" id="maxSco" step="1" min="1">
+                <input type="number" name="maxSco" id="maxSco" step="1" min="1" value="1">
 
                 <div class="container" id="scoDisplayContainer">
                     <div class="row">
 
-                        <div class="col-4 wonRounds">
-                            <input class="chbxRounds" type="checkbox" name="chbx1-1" id="chbx1-1">
-                            <input class="chbxRounds" type="checkbox" name="chbx1-1" id="chbx1-2">
-                            <input class="chbxRounds" type="checkbox" name="chbx1-1" id="chbx1-3">
-                            <input class="chbxRounds" type="checkbox" name="chbx1-1" id="chbx1-4">
-                            <input class="chbxRounds" type="checkbox" name="chbx1-1" id="chbx1-5">
+                        <div id="chbxDiv" class="col-4 wonRounds">
                         </div>
 
                         <div id="scoDisplay" class="col-4 text-center scoDisplay">
@@ -71,108 +112,81 @@
 
 
                         <div class="col-4 wonRounds">
-                            <input class="chbxRounds" type="checkbox" name="chbx2-1" id="chbx2-1">
-                            <input class="chbxRounds" type="checkbox" name="chbx2-1" id="chbx2-2">
-                            <input class="chbxRounds" type="checkbox" name="chbx2-1" id="chbx2-3">
-                            <input class="chbxRounds" type="checkbox" name="chbx2-1" id="chbx2-4">
-                            <input class="chbxRounds" type="checkbox" name="chbx2-1" id="chbx2-5">
                         </div>
+
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button id="btnOnbehalfOf1" type="button" class="btn btn-primary">Player 1</button>
+                            <button id="resetBtn" type="button" class="btn btn-danger">Reset</button>
+                            <button id="btnOnbehalfOf2" type="button" class="btn btn-success">Player 2</button>
+                        </div>
+
+
                     </div>
                     <!--<div class="row">-->
                 </div>
                 <!--<div class="container" id="scoDisplayContainer">-->
+                <div class="text-center">
+                    <button id="btnToRollDice" type="button" class="btn btn-secondary">Roll the Dice</button>
+                    <img id="dicePic" src="https://cdn.pixabay.com/photo/2012/04/10/22/53/dice-26772__340.png"
+                        alt="dice picture">
 
-                <div class="row" id="forButtons">
-                    <div id="buttonTest"><button>Button</button></div>
-                    <div class="col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi veniam
-                        consequuntur atque in ipsam qui perferendis repellendus, ratione odit possimus temporibus
-                        officia sed cupiditate ex debitis aliquam quaerat fugiat molestiae.</div>
-                    <div class="col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, saepe? Cum natus
-                        possimus esse suscipit eaque eos, officia corporis impedit ratione nobis magnam pariatur fugit
-                        nam porro consequatur, harum sed!</div>
+                    <p><span id="firstMoveSpan">Player #</span> makes first move</p>
+                </div>
+            </div>
+
+
+            <div id="avaSet2" class="col-3 text-center">
+
+                <button class="btn-ava" id="ava2-1">
+                    <img class="imgAva"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
+                        alt="picture">
+                </button>
+
+                <button class="btn-ava" id="ava2-2">
+                    <img class="imgAva"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"
+                        alt="picture">
+                </button>
+
+                <button class="btn-ava" id="ava2-3">
+                    <img class="imgAva"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"
+                        alt="picture">
+                </button>
+
+                <button class="btn-ava" id="ava2-4">
+                    <img class="imgAva"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png"
+                        alt="picture">
+                </button>
+
+                <button class="btn-ava" id="ava2-5">
+                    <img class="imgAva"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png"
+                        alt="picture">
+                </button>
+
+                <button class="btn-ava" id="ava2-6">
+                    <img class="imgAva"
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png"
+                        alt="picture">
+                </button>
+
+
+                <div class="row mt-3">
+                    <div id="selectedAva2" class="selectedAva text-center col-12">
+                        <img id="selecImg2" class="selImgAva"
+                            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+                            alt="avatar picture">
+                    </div>
                 </div>
 
             </div>
-
-            <div class="col-3">
-                r
-            </div>
-
         </div>
+
+
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <div>
-        <img src="https://media.istockphoto.com/photos/various-sport-equipments-on-grass-picture-id949190736?b=1&k=20&m=949190736&s=170667a&w=0&h=f3ofVqhbmg2XSVOa3dqmvGtHc4VLA_rtbboRGaC8eNo="
-            alt="Ping pong picture">
-        <p id="headerP">Ping Pong score keeper</p>
-        <section>
-
-            <p id="scores" class="left">
-                <span id="scores1">0</span>
-                <span id="to">to</span>
-                <span id="scores2">0</span>
-            </p>
-
-            <p id="commentText">Use the buttons below to keep score</p>
-
-            <p id="maxScore" class="left">
-                <span class="bold">Playing to</span>
-
-                <select name="maxScores" id="maxSc" class="roundBorder">
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </select>
-            </p>
-
-        </section>
-
-        <nav>
-            <button id="player1">+1 Player One</button>
-            <button id="player2">+1 Player Two</button>
-            <button id="reset">Reset</button>
-        </nav>
-
-
-    </div> -->
 
     <script src='myApp.js'></script>
 </body>
