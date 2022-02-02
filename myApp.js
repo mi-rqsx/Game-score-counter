@@ -36,54 +36,6 @@ rounds.addEventListener('change', () => {
     }
 })
 
-// chbxDiv.prepend(chbxI);
-// chbxDiv.append(chbxI);
-// chbxDiv.append(chbxI);
-// chbxDiv.append(chbxI);
-// chbxDiv.append(chbxI);
-
-
-// var counter = 1; //limits amount of transactions
-// function addElements() {
-//     if (counter < 5) //only allows 4 additional transactions
-//     {
-//         let div = document.createElement('div');
-//         div.id = 'row' + counter;
-//         document.body.appendChild(div);
-
-//         let input = document.createElement('input');
-//         input.id='search'+counter;
-//         input.type = 'search';
-//         input.placeholder = 'Search by product name'
-//         div.appendChild(input);
-
-//         let input1 = document.createElement('input');
-//         input.id='checkbox'+counter;
-//         input.type = 'checkbox';
-//         div.appendChild(input1);
-
-//         let button = document.createElement('button');
-//         button.id ='button'+counter;
-//         button.type = 'QRscan';
-//         button.innerText = 'QR scan'
-//         div.appendChild(button);
-//     }
-
-//     counter++
-//     if (counter >= 6) {
-//         alert("You have reached the maximum transactions.")
-//     }
-// }
-
-
-
-
-
-
-
-
-
-
 
 let i = 0;
 let isGameOver = false;
