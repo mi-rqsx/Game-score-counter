@@ -22,6 +22,7 @@ const player2 = {
 //here i need to embed checkboxes into (div #chbxDiv)
 const chbxDiv = document.querySelector('#chbxDiv');
 const rounds = document.querySelector('#numRounds');
+let theChecks = document.querySelectorAll('input[type="checkbox"]'); // var is created to call it after inputs will be appended so that i can determine all checkboxes
 
 rounds.addEventListener('change', () => {
     chbxDiv.innerHTML = '';
@@ -33,8 +34,12 @@ rounds.addEventListener('change', () => {
         chbxI.classList = 'chbxRounds';
         chbxI.id = 'chbx1-1' + i;
         chbxDiv.append(chbxI);
+
     }
+    theChecks = document.querySelectorAll('input[type="checkbox"]'); // // var is created to call it after inputs will be appended so that i can determine all checkboxes
 })
+
+
 
 
 let i = 0;
@@ -42,11 +47,20 @@ let isGameOver = false;
 const maxScore = document.querySelector('#maxSco');
 
 
+// for (ch of document.querySelectorAll('input[type="checkbox"]')) {
+//     return ch.checked
+// }
+
+
+
 player1.button.addEventListener('click', () => {
     if (!isGameOver) {
         i++;
         player1.dispSco.innerText = i;
         if (player1.dispSco.innerText == maxScore.value) {
+            for (ch of theChecks) {
+                return ch.checked = true
+            }
             isGameOver = true;
         }
     }
